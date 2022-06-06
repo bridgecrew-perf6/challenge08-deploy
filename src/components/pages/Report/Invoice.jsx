@@ -1,6 +1,6 @@
 import React from 'react';
 import { Page, Text, Image, Document, StyleSheet } from '@react-pdf/renderer';
-import Binar from '../../svg/hero-login.svg';
+import Binar from '../../svg/image-3.jpeg';
 
 const styles = StyleSheet.create({
   body: {
