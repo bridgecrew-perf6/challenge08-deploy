@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@400;500&display=swap');
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+.avatar {
+  width: 7em !important;
+}
+
+div.gap {
+  width: 35.5rem;
+  margin-left: 8em;
+}
+
+div.gap-2 {
+  width: 29.25rem;
+  margin-left: 8em;
+}
+
+.owl-nav {
+  text-align: center;
+  padding: 1em;
+}
+
+.owl-next {
+  margin-left: 0.5em;
+}
+
+.owl-prev {
+  margin-right: 0.5em;
+}
+
+.kotak {
+  width: 100px;
+  height: 34px;
+  background-color: #0d28a6;
+  margin-top: 1em;
+}
+
+.kotak-auth {
+  width: 100px;
+  height: 34px;
+  background-color: #cfd4ed;
+  margin-top: 1em;
+}
+
+img.effect {
+  background-color: #0d28a6;
+}
+
+.square {
+  width: 130px;
+  height: 34px;
+  background-color: #0d28a6;
+}
+
+ul.list-service li p::before {
+  content: url(./components/svg/check.svg);
+  position: relative;
+  top: 0.4em;
+  margin-right: 1em;
+}
+
+.list-service {
+  padding: 0;
+}
+
+div.bg-darkBlue {
+  background-color: #0d28a6;
+}
+
+div.rounded-cta {
+  border-radius: 1em;
+  padding: 3em;
+}
+
+.rounded-testimonial {
+  border-radius: 0.5em;
+  padding: 3em;
+}
+
+.bg-lightGrey {
+  background-color: #f1f3ff;
+}
+
+div select.custom-select {
+  padding-left: 2em;
+  font-size: medium;
+}
+
+footer ul li a {
+  color: black;
+}
+
+footer ul li a:hover {
+  color: rgb(107, 107, 107);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.font {
+  font-size: 14px;
+}
+
+.rounded-cta {
+  border-radius: 1em;
+  padding: 3em;
+}
+
+.rounded-testimonial {
+  border-radius: 0.5em;
+  padding: 3em;
+}
+
+div.star {
+  width: 7em;
+  margin-bottom: 0.5em;
+}
+
+.top-service {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.padding-hero {
+  padding-top: 3em;
+  padding-right: 0px;
+}
+
+#whyus,
+#cta,
+#faq,
+footer {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+div.ourservices {
+  margin: auto;
+}
+
+.img-service {
+  margin-right: 3.2em;
+}
+
+.lebar-form-custom {
+  width: 210.75px;
+}
+
+.form-custom {
+  position: relative;
+  padding: 1em;
+  width: 1250px;
+  height: 116px;
+  z-index: 5;
+  opacity: 1;
+  top: -50px;
+  left: -50px;
+
+  /* Neutral/01 */
+
+  background: #ffffff;
+  /* Shadow/High */
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.form-custom-1 {
+  position: relative;
+  padding: 1em;
+  width: 1250px;
+  height: 146px;
+  top: -50px;
+  left: -50px;
+  z-index: 5;
+  opacity: 1;
+
+  /* Neutral/01 */
+
+  background: #ffffff;
+  /* Shadow/High */
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.margin-top-custom {
+  margin-top: 1em;
+}
+
+ul.tentang-paket {
+  list-style-type: disc;
+}
+
+.card-text-custom {
+  font-size: 12px;
+}
+
+.custom-size-aweseome-2 {
+  font-size: 40px;
+}
+
+.custom-size-aweseome-1 {
+  font-size: 20px;
+}
+
+.card-img-top {
+  height: 160px;
+  width: 270px;
+}
+
+.custom-body {
+  position: absolute;
+  width: 100%;
+  min-height: 65vw;
+  background-color: black;
+  z-index: 3;
+  opacity: 0.5;
+  display: none;
+}
+
+.custom-bg-active {
+  display: block;
+}
+
+#sidebar {
+  min-width: 320px;
+  max-width: 320px;
+  background: #0d28a6;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar.active {
+  margin-left: -320px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #0d28a6;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #7386d5;
+  background: #fff;
+}
+
+#sidebar ul li.active a,
+a[aria-expanded='true'] {
+  color: #fff;
+  background: #6d7fcc;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+#content {
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+.custom-size-aweseome {
+  font-size: 21px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  #whyus,
+  #cta,
+  #faq,
+  footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .rounded-cta {
+    border-radius: 1em;
+    padding: 2em;
+  }
+
+  div.ourservices {
+    margin-top: 2em;
+  }
+
+  div.gap {
+    width: auto;
+    margin-left: 0;
+    margin-top: 2em;
+  }
+
+  div.gap-2 {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .padding-hero {
+    padding-left: 0em;
+  }
+
+  .img-service {
+    margin-right: 0em;
+  }
+
+  .top-service {
+    margin-top: 3em;
+    margin-bottom: 0em;
+  }
+
+  .copyright,
+  .contact-us {
+    margin-bottom: 1em;
+  }
+
+  div select.custom-select {
+    padding-left: 1em;
+    font-size: small;
+  }
+
+  div.star {
+    margin: 1em auto 1em auto;
+    width: 7em;
+  }
+}
