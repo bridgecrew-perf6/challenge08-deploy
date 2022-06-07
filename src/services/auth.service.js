@@ -33,6 +33,7 @@ const logout = () => {
   localStorage.removeItem('user');
 };
 
+// eslint-disable-next-line
 export default {
   register,
   login,
