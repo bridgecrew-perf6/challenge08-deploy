@@ -2,13 +2,14 @@ import React from 'react';
 import {
   faCircleCheck,
   faDownload,
-  faImage,
   faArrowLeft,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import progress from '../svg/progress-3.svg';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { Invoice } from './Report/Invoice';
+
+import { PDFViewer } from '@react-pdf/renderer';
 
 export default function InvoiceUser() {
   return (
@@ -90,15 +91,10 @@ export default function InvoiceUser() {
 
             <p className="text-muted custom-font-4">*no invoice</p>
 
-            <div className="container rounded custom-bg-upload">
-              <p className="text-center my-5">
-                <FontAwesomeIcon
-                  icon={faImage}
-                  className="text-dark custom-size-aweseome"
-                />{' '}
-                &nbsp;
-                <span className="text-muted custom-font-1">PDF Viewer</span>
-              </p>
+            <div className="container rounded custom-bg-upload d-flex justify-content-center">
+              <PDFViewer style={{ width: '100%', height: '100%' }}>
+                <Invoice />
+              </PDFViewer>
             </div>
           </div>
         </div>
