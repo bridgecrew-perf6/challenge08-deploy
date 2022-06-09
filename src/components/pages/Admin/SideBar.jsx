@@ -2,6 +2,7 @@ import React from 'react';
 import './Admin.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faTruck } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function SideBar() {
   return (
@@ -17,14 +18,14 @@ function SideBar() {
               <br />
               <div className="m-auto parent-menu-active p-3">
                 <div className="text-center">
-                  <a href="/admin" className="custom-font-1">
+                  <Link to="/admin" className="custom-font-1">
                     <FontAwesomeIcon
                       icon={faHome}
                       className="custom-size-aweseome"
                     />
                     <br />
                     Dashboard
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -32,14 +33,14 @@ function SideBar() {
               <br />
               <div className="m-auto p-3">
                 <div className="text-center">
-                  <a href="/lists" className="custom-font-1">
+                  <Link to="/lists" className="custom-font-1">
                     <FontAwesomeIcon
                       icon={faTruck}
                       className="custom-size-aweseome"
                     />
                     <br />
                     Cars
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

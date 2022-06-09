@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../App.css';
@@ -93,16 +93,20 @@ function NavList() {
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   {showAdminBoard && (
-                    <Dropdown.Item href="/admin">Admin</Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to={'/admin'}>Admin</Link>
+                    </Dropdown.Item>
                   )}
                   {currentUser && (
                     <>
-                      <Dropdown.Item href="/user">User</Dropdown.Item>
-                      <Dropdown.Item href="/">
-                        {currentUser.fullname}
+                      <Dropdown.Item>
+                        <Link to={'/user'}>User</Link>
                       </Dropdown.Item>
-                      <Dropdown.Item href="/login" onClick={logOut}>
-                        Logout
+                      <Dropdown.Item>
+                        <Link to={'/'}>{currentUser.fullname}</Link>
+                      </Dropdown.Item>
+                      <Dropdown.Item onClick={logOut}>
+                        <Link to={'/login'}>Logout</Link>
                       </Dropdown.Item>
                     </>
                   )}
