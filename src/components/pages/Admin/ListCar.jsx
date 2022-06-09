@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -13,6 +12,7 @@ import { useSelector } from 'react-redux';
 import { Button, Modal } from 'react-bootstrap';
 import { useState } from 'react';
 import ModalImage from 'react-modal-image';
+import { Link } from 'react-router-dom';
 
 export default function ListCar() {
   const [show, setShow] = useState(false);
@@ -53,9 +53,9 @@ export default function ListCar() {
 
       <div className="d-flex justify-content-between">
         <h6 className="font-weight-bold custom-font-2">List Car</h6>
-        <a className="btn text-white custom-add" href="/add-new-car">
+        <Link className="btn text-white custom-add" to="/add-new-car">
           + &nbsp; Add New Car
-        </a>
+        </Link>
       </div>
 
       <div className="d-flex justify-content-start mb-4 mt-2">
@@ -125,8 +125,8 @@ export default function ListCar() {
                     <div className="row">
                       <div className="col-6">
                         <span>
-                          <a
-                            href="#"
+                          <Link
+                            to="#"
                             className="btn btn-outline-danger custom-font-4 w-100 py-2"
                             onClick={handleShow}
                           >
@@ -135,7 +135,7 @@ export default function ListCar() {
                               className="custom-size-aweseome"
                             />
                             &nbsp;Delete
-                          </a>
+                          </Link>
                           <Modal
                             show={show}
                             onHide={handleClose}
